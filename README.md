@@ -3,6 +3,9 @@ Java Application building in Capgemini Bootcamp Start.
 Its a tasks manager with edit tools and easy use for day-to-day.
 the program update it self according to mysql database.
 
+## Video-demo
+https://github.com/delfo2/TodoApp-capgemini/assets/105376328/5ee851b0-b255-4754-a0c2-af24c874ff1c
+
 ## Screenshots
 ### main page
 ![image](https://github.com/delfo2/TodoApp-capgemini/assets/105376328/bb6a1e4d-251c-4196-b57f-b0b898e831e3)
