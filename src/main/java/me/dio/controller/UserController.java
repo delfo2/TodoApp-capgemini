@@ -15,17 +15,20 @@ public class UserController {
     private final UserService userService;
 
     public UserController(UserService userService) {
+        System.out.println("controller");
         this.userService = userService;
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<User> findById(@PathVariable Long id) {
+        System.out.println("searching user");
        var user = userService.findById(id);
        return ResponseEntity.ok(user);
     }
 
     @PostMapping
     public ResponseEntity<User> create(@RequestBody User userToCreate) {
+        System.out.println("creating user");
         var userCreated = userService.create(userToCreate);
         URI location = ServletUriComponentsBuilder.fromCurrentRequest()
                 .path("/{id}")
